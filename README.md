@@ -1,13 +1,13 @@
 # Implementing_Azure_Solutions
 Implementing Microsoft Azure Infrastructure Solutions
 
-Azure Identities Environment Setup
+Azure Identities Environment Setup:
 1. How to create web app.
 2. How to create enterprise application and register it.
 3. How to create virtual Network
 4. How to create virtual Mechines
 
-Configuring virtual Networks.
+Configuring virtual Networks:
 
 Note: Before delating virtual Network you must delate the Vitual mechines, Public Ip, Network interface assosiated with it. 
 1. How to create a Virtual Network and add a Subnet(10.0.1.0/24) & Gateway(10.0.2.0/24).
@@ -19,7 +19,7 @@ Below five are Just mentioned the Links In the video.
 6. Point-to-site
 7. VPN Gateway
 
-Storage Strategy Environment Setup
+Storage Strategy Environment Setup:
 
 1. Two Storage accounts and adding three containers blobs to that storage accounts.
 2. Can also view over storage accounts to azure storage explorer. You can download and install it.
@@ -28,3 +28,6 @@ Storage Strategy Environment Setup
 5. Inorder to create the VHD file we must have to create a windows client and connect and shutdown and stop the windows client and Go to Windows VM and download the VHD file.
 6. How to create a Stream analytics Job.
 7. How to create a Datalake Storage Gen1 & Key vault.
+
+Azure App Service Apps Environment Setup:
+
