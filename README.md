@@ -35,3 +35,6 @@ Azure App Service Apps Environment Setup:
 2. How to create a Deployment slots. And swap the deployment slots from development to production.
 3. Creating the FTP/Deployment credentials, So you can access the files using filezella.
 4. How to deploy the web App using visual Studio.
+5. How to create a Notification Hub.
+6. How to publish a webApp to the Azure portal.
+7. How to setup the Diagonistics logs for the App service and use the log stream. 
