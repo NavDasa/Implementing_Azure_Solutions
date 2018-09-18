@@ -19,4 +19,6 @@ Below five are Just mentioned the Links In the video.
 6. Point-to-site
 7. VPN Gateway
 
+Storage Strategy Environment Setup
 
+1. Two Storage accounts and adding three containers blobs to that storage accounts.
