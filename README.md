@@ -22,3 +22,5 @@ Below five are Just mentioned the Links In the video.
 Storage Strategy Environment Setup
 
 1. Two Storage accounts and adding three containers blobs to that storage accounts.
+2. Can also view over storage accounts to azure storage explorer. You can download and install it.
+3. How to generate a VHD file for the windows desktop client.
