@@ -26,3 +26,5 @@ Storage Strategy Environment Setup
 3. How to generate a VHD file for the windows desktop client.
 4. When connected to the remote desktop you must go to the C/windows/system32/sisprep/sysprep.exe/ --> Run that execuatble and click generalize and press ok to shutdown the remote desktop.
 5. Inorder to create the VHD file we must have to create a windows client and connect and shutdown and stop the windows client and Go to Windows VM and download the VHD file.
+6. How to create a Stream analytics Job.
+7. How to create a Datalake & Key vault.
