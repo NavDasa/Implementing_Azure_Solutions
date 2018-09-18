@@ -38,3 +38,14 @@ Azure App Service Apps Environment Setup:
 5. How to create a Notification Hub.
 6. How to publish a webApp to the Azure portal.
 7. How to setup the Diagonistics logs for the App service and use the log stream. 
+
+ARM Templates Environment Setup:
+
+Browser server communication JSON & ARM templetes.
+
+1. How to deploy a Templete Deployment.
+
+ARM templete we can deploy each and every tool in the resource group including resource group everthing can be written in Templete noting but the Infrasture as a code, & change as per our needs.
+
+Azure Security and Recovery Services Environment Setup:
+
