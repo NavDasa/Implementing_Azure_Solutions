@@ -31,3 +31,7 @@ Storage Strategy Environment Setup:
 
 Azure App Service Apps Environment Setup:
 
+1. How to create a web app ? while creating a web app you have to choose the service plan, So it provides the Features (custom domain, autoscale, daily backups, traffic manage, staging slots), Hardware( CPU, memory, storage) etc.. after creating the web app you can change the plan anytime you want by going to the scale up icon. 
+2. How to create a Deployment slots. And swap the deployment slots from development to production.
+3. Creating the FTP/Deployment credentials, So you can access the files using filezella.
+4. How to deploy the web App using visual Studio.
