@@ -84,5 +84,21 @@ Implement Social Identity Provider Authentication:
 
 1. How to setup a user facebook as a Social Identity provider in order to login acess Portal & New user registration.
 
+Manage Domains with Azure Active Directory Domain Services:
+
+1. How to create a subnet within Virtual Network specifically for azure active directory. 
+2. How to create a Active directory domain services. 
+3. How to connect virtual mechine Join to the Azure AD Domain services.
+4. How to add the Group policy management for the End-User.
+
+Integrate with Azure Active Directory (Azure AD):
+
+1. How to add Custom Domain to AD Connect.
+
+How to Monitor On-Premises Identity Infrastructure and Synchronization Services with Azure AD Connect Health:
+
+Leverage Microsoft Graph API:
+ 
+Microsoft Graph API is a RESTful API built on top of the Office 365 service that gives your developers access to an extraordinary amount of information specific to your end users. This allows their applications to provide an amazing level of customization and personalization.
 
 
