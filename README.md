@@ -58,4 +58,11 @@ Azure Security and Recovery Services Environment Setup:
 7. How to create a recovery services vault( noting but taking backup of your virtual machine, SQL Databases etc.. in the app or On-premises) in the Virtual Machine and enabling it and Doing backup manually. If you want to install Onpremises backup then you Just dowlaod the agent.
 8. How to create an MY APP Secure sign-in extension. (For quickly access the Apps). 
 
+Azure Operations Environment Setup:
+
+1. Powershell runbooks are used to automate the management of the resources for your organization, that are not located in the azure, including tracking,inventory etc..
+2. How to setup a Automation account.
+3. How to add a New runbook to the automation account created.
+3. How to createa a log analytics. ( Allow you to capture data within log systems in the Hybrid environments, Automate, and manage infrasture easily).
+4. How to create a log analytics in the OMS(Operations management suite)  work space.
 
