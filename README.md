@@ -72,4 +72,8 @@ Implement Azure AD B2C
 2. How to add an Active directory to your Azure subcription and Add resource group to it.
 3. How to create an Multi-Factor authentication in the Azure Active directory (Azure B2C).
 
+Implement Azure AD B2B Collaboration:
+
+1. How to add third patry users to the Organization to access there Resources.
+2. How to connect Azure portal through TenentID through Powershell. And add User.
 
