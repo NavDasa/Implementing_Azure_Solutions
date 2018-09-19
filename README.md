@@ -111,3 +111,4 @@ Microsoft Graph API is a RESTful API built on top of the Office 365 service that
 6. How to setup VNETS.
 7. How to create a Load balancer and internal backend Pool.
 8. How to creata a BankEnd Pool and adding a load balancer rules for a load balancer associated internally with single virtual Mechine.
+9. How to setup the health Probe within the load balancer.
