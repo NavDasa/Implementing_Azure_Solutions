@@ -49,3 +49,13 @@ ARM templete we can deploy each and every tool in the resource group including r
 
 Azure Security and Recovery Services Environment Setup:
 
+1. How to create a Key vault: A key vault is a place to store criptographic keys using hardware security models, maintaining keys in managed place, also Microsoft is not awolled to see this keys.
+2. How to create a Key vault and add keys in key vault.
+3. How to create a scretes in the keyvault, it is noting but like a API Key, database key etc.. it can be only authorized by the application we kept to authorized. we can add an SSL cretificates from the computer or you can manually create a certificate.
+4. How to create a resource group and add security polices(that users can access the data, like an owner) for that resource group.
+5. How to add a user and assign them one of them security roles.
+6. How to assign a user for add permissions in the security center.
+7. How to create a recovery services vault( noting but taking backup of your virtual machine, SQL Databases etc.. in the app or On-premises) in the Virtual Machine and enabling it and Doing backup manually. If you want to install Onpremises backup then you Just dowlaod the agent.
+8. How to create an MY APP Secure sign-in extension. (For quickly access the Apps). 
+
+
