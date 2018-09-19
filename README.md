@@ -70,4 +70,6 @@ Implement Azure AD B2C
 
 1. Create an Azure Active directory.
 2. How to add an Active directory to your Azure subcription and Add resource group to it.
+3. How to create an Multi-Factor authentication in the Azure Active directory (Azure B2C).
+
 
