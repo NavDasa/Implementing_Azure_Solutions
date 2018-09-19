@@ -101,4 +101,13 @@ Leverage Microsoft Graph API:
  
 Microsoft Graph API is a RESTful API built on top of the Office 365 service that gives your developers access to an extraordinary amount of information specific to your end users. This allows their applications to provide an amazing level of customization and personalization.
 
+#Implementing Virtual Networks
 
+1. How to Congifuring Virtual Networks which is having two subnets.
+2. How to deploy VM to virtual Network.
+3. How to create, Public, Private, Static IP Address for this Virtual Mechines.
+4. What is virtual Network peering.
+5. How to setup Network  Security Groups.
+6. How to setup VNETS.
+7. How to create a Load balancer and internal backend Pool.
+8. How to creata a BankEnd Pool and adding a load balancer rules for a load balancer associated internally with single virtual Mechine.
