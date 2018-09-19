@@ -76,4 +76,8 @@ Implement Azure AD B2B Collaboration:
 
 1. How to add third patry users to the Organization to access there Resources.
 2. How to connect Azure portal through TenentID through Powershell. And add User.
+3. Command to install a Module: install-Module AzureADPreview.
+4. Command to connect to Azure Portal from PowerShell : Connect-AzureAD -TenantId 776f0585-c915-45f4-b28d-51fb3426af81 (ID can be get in Activedirectory -> Properties -> DirectoryID.
+5. Command to create a user from Powershell: New-AzureADMSInvitation -InvitedUserEmailAddress naveendasari571@gmail.com -SendInvitationMessage $True -InvitedRedirectUrl "http://myapps.microsoft.com" 
+
 
