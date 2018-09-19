@@ -66,3 +66,8 @@ Azure Operations Environment Setup:
 3. How to createa a log analytics. ( Allow you to capture data within log systems in the Hybrid environments, Automate, and manage infrasture easily).
 4. How to create a log analytics in the OMS(Operations management suite)  work space.
 
+Implement Azure AD B2C
+
+1. Create an Azure Active directory.
+2. How to add an Active directory to your Azure subcription and Add resource group to it.
+
