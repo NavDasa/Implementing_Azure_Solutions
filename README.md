@@ -113,3 +113,52 @@ Microsoft Graph API is a RESTful API built on top of the Office 365 service that
 8. How to creata a BankEnd Pool and adding a load balancer rules for a load balancer associated internally with single virtual Mechine.
 9. How to setup the health Probe within the load balancer.
 10. How to create an Application gateway and configure the load balancer and subnets attached to it.
+
+Implement Azure Storage Blobs and Azure Files
+
+1. Page Bolb: Talk about the disk.Read and write the data, Pre-sized block. File editting, multiple peopele can assign and rewrite at the same time. Read and write, can use as disk. 
+2. Block Blob: Talk about the Page Types. Distributed file system, Large bloack of data, fault tolerance and performace, Files that need to be acess by HTTP END POINT, vitual mechine power shell scripts. 
+3. Queues: Back-end, Small data, simple messages.
+
+Part -2
+
+1. How to create and setup Metadata for the blob container. 
+2. Why to use page blob in the VHD format, the advantage through API we can acess the specific disks only. Disks for VM Machines, Read and write specific sectionsfor a virtual Disks, Videos and audios editing.
+3. How to secure the Bolbs at the Storage account levels with Firewall and Virtual Networks.
+4. Table: Sturucted or semi structured. Small Excel files, distributed file storage, distributed disk storage, Speed.
+5. File share: SMP File share, onpremises to azure, Based on Page blob and the disk, page blobs are mouted to vitual storage.
+
+Part -3 
+
+1. How to do the stream analytics Job means convert the storage Blob to the Azure Data lake in the Table format. This allow the business people to grabe the data in the Excel format, documnets in the readle format.
+
+Part -4
+
+1. How to design blob hiaricy, blob storage, implement a snap shot of the blob, manage SMB or file storage.
+2. How to copy the Files to from the local to the Blob storage files.
+3. How to createa a file share in the Storage account and connect the VM'S attached to it and copy to sample document from that virtual mechine to the file shared folder. 
+4. How to creaete a snap shot for the blob storage, create snapshot, manage snapshots, promote snapshots, Delate.
+
+Implement Azure Storage Blobs and Azure Files - Configure Custom Domains:
+
+1. How to create Custom Domain, and register the Domain in the Godaddy domain registration and access the container blob to the make public and see the Hello -World output.
+2. How to create an Azure CDN and register the domain with GoDaddy domain CNAME Records and add the Endpoints for custom domain for the Content delivery Network.
+
+Manage Access for storage account resources:
+
+1. How to create Account access keys and storage access signatures. Read, write, list,view the access polies.
+Legal Hold: Permenently block the access for a perticular container in the blob.
+Time Based: Time limit is mentioned to block the access for a container in the blob.
+
+Implementing Azure Storage strategy:
+
+1. How to create enable azure diogonotics azure storage accounts, How to analyze log entries that are made read write list of a storage blob. 
+2. How are reads, writes, been authorized, where they are comming from, it can be done through Diagnostics logs.
+3. How to generate the Diagonistic logs. 
+
+Implement Storage Encryption:
+
+1. How to implement Encryption and datalake storage in the role based security. 
+2. How to encrypt keys from the azure storage account encryption and store it in the Key vault. Can also keep our own keys or we can also select from the Key vault. 
+Note: Storage account and key vault should be in the same region.
+3. How to create a key picker, and How the create an encrytpion for the datalake store and how the user is assigned to the user to access the datalake store with create polices, by assign him roles. 
