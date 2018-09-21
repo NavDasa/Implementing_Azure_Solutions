@@ -251,6 +251,44 @@ How to create a VMSS in Azure through Power shell, Script can be seen in the vid
 15. Assign the NIC Card configuration for the virtual mechines.
 16 .Finally the command to create the VMSS(Virtual mechine scale sets).
 
+Manage Containers with Azure Container Services:
+
+Containers are appearing everywhere. They're in back-end processing, in web applications, and in security. Containers provide the ability to preconfigure a workload infrastructure and run on demand. They do all this while sharing compute resources and minimizing setup time and storage costs.
+
+In this lesson we will cover how to:
+
+Create and manage container images
+Implement Azure Container Registry
+Migrate container workloads to and from Azure
+
+1. How to create a container registry from the power shell.
+2. push the docker images to the azure container registry.
+
+Manage Containers with Azure Container Services - Part 2:
+
+1. How to deploy a kubernetes cluster into azure container services, how to deploy a container into that cluster.
+2. How to push the containers from the azure container registry to the Kubernetes cluster.
+
+If one container is good, more is better. That is the mantra of Kubernetes. Using Kubernetes you can organize a pod of containers to perform a specific task. Once it is finished, tear it down. Ready to run it again? No problem, just spin them all up with a single command.
+
+In this lesson we will cover how to:
+
+Deploy a Kubernetes cluster in ACS
+Configure for open-source tooling
+
+Manage Containers with Azure Container Services - Part 3:
+
+1. How to scale up ACS Cluster. 
+
+If one container is good, more is better. That is the mantra of Kubernetes. Using Kubernetes you can organize a pod of containers to perform a specific task. Once it is finished, tear it down. Ready to run it again? No problem, just spin them all up with a single command.
+
+In this lesson we will cover how to:
+
+Scale applications using Docker, DC/OS, Swarm, or Kubernetes
+Monitor Kubernetes by using Microsoft Operations Management Suite (OMS).
+
+
+
 
 
 
