@@ -162,3 +162,46 @@ Implement Storage Encryption:
 2. How to encrypt keys from the azure storage account encryption and store it in the Key vault. Can also keep our own keys or we can also select from the Key vault. 
 Note: Storage account and key vault should be in the same region.
 3. How to create a key picker, and How the create an encrytpion for the datalake store and how the user is assigned to the user to access the datalake store with create polices, by assign him roles. 
+
+Deploy Workloads on Azure Resource Manager (ARM) Virtual Machines (VMs) - Part 2:
+
+1. Two VMs windows & Ubuntu VMs in the centralUS, don't have Public IP address.
+2. Two VMs Windows & Ubuntu VMs in the EastUS, have the Public IP address. (How we have configured the Security group for this Public IP address).
+
+From the above two points. Shown the senario below:
+--> How to connect to the Two VMs in tthe CentralUS. we have to setup  the Point to site Network then if we press connect then we can connect with the Private IP address of the Ubuntu Virtual mechine by using the command.
+          ssh -i Azure-Course-key.pem latoysadmin@privateIP 
+--> How to connect to the second VMS in the central US for the windows desktop. By downloading the RDP file, you can connect to that.
+
+-->How to connect to the VMs in the East VMs which has the public IP address. By using putty. 
+
+--> How to create a VMs that has the own licence with Microsoft, and it cost less price for the virtual Mechine.
+
+Perform Configuration Management - Part 1:
+
+--> VM Agent custom script extensions: Agent that runs on the Azure VM that allows you to execute single one off scripts on that agent to perform any number of tasks.
+
+In the above section it mainly discribes that how to add a New roles (For Example: Node configurations like Installing web servers, IIS disk files) to the Virtual mechines in the Azure portal. This is done through the Automation account by adding the IIS Disc config file to the DSC(Desired state configuration) and complie the changes the existing virtual mechine. 
+
+They by they we have to change number of node configurations in the multiple existing vitual mechines so this is the right section to view. 
+
+Perform Configuration Management - Part 2:
+
+We can debug the Azure VM's through the VSTS(Visual studio team services) in the Cloud Exploxer and debug the VM's logs.
+
+While developing an application, there is always a point when you need to begin testing in your final environment. Azure gives you a remote debugging tool, allowing you to access real-time application and system logs on your remote machine.
+
+This lets your developers quickly test and debug apps, leading to a shorter development cycle. 
+
+Design and Implement VM Storage - Disk Encryption:
+
+Why ? Control of Encrytption keys, key vaults, Data, disk encryption keys is stored in the Key vault, complete contol of VMs.
+1. How to setup a Disc Encryption: Azure by default while creating storage service encrytption. But we have to get control of the Disk encryption. How ? 
+
+Azure's Data at Rest Encryption automatically encrypts your data as it is stored in an Azure storage account. Sometimes though, regulatory requirements or business practices require you to have physical or logical control of your access keys.
+
+Using disk encryption, you can forcibly encrypt data stored on VMs and other services, using your keys to keep everything in your control.
+
+
+
+ 
