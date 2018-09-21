@@ -202,6 +202,64 @@ Azure's Data at Rest Encryption automatically encrypts your data as it is stored
 
 Using disk encryption, you can forcibly encrypt data stored on VMs and other services, using your keys to keep everything in your control.
 
+Monitor ARM VMs:
+
+we will cover how to:
+
+1.Configure ARM VM monitoring
+2.Configure alerts. ( When the CPU Usage Threshold is more then 75% get an Aleart by Email to a particular group)
+3.Configure diagnostic and Monitoring storage location. ( Enable the guest level monitoring in the VM, and enable log aleart like Cretical, audit failure, system, admistrivate logentries Info, to the storage account )
+
+Manage ARM VM Availability:
+
+1. How to configure VM Availability sets. Load balancer and Availabilty sets.
+
+SaaS, SLAs, and uptime are crucial as businesses rely more on cloud services.
+Creating the infrastructure to support high availability requires tooling that organizations previously had to write from scratch.
+
+Nowadays, Azure provides many tools to facilitate the management of Highly Available resources.
+In this video we will cover:
+
+1. Configure multiple ARM VMs in an availability set for redundancy
+2. Configure each application tier into separate availability sets
+3. Combine the Load Balancer with availability sets
+4. Configure fault domains and update domains
+
+We have to create an Availabilty set and launch a VM by keeping that Availabilty set. 
+
+5. How to launch a VM with that Availabilty set through Power shell. Before doing that make sure that you create a Subnet, Security group and Network. 
+6. How to create a Load balancer with the Availabilty set.
+
+Scale ARM VMs:
+
+How to create a VMSS in Azure through Power shell, Script can be seen in the video and can be dowloaded from the study group.
+
+1. Give the names of the Resource group, scale set name, location.
+2. Script to create a new resource group, subnet, network.
+3. create a new Public IP address. 
+4. Assign to the front of the load balancer of the virtual mechine scale set.
+5. creaet the front end and back end pool of the load balancer.
+6. create the Inbound NAC for port 3389 RDP Port. 
+7. create the loab balancer by giving the names of front end backend pool of the load balancer.
+8. create a health prob of the load balancer.
+9. create a load balancer rule config. ( how the load balancer route traffic).
+10. set and update the load balancer configuration.
+11. Grabe an IPConfig for the scale set.
+12. Grabe the Config and where this sclae set has to be like location, policy, automatic. 
+13. Grabe the images that is going to be installed on the instances. 
+14. Assign the os profile, like user name and password for the server.
+15. Assign the NIC Card configuration for the virtual mechines.
+16 .Finally the command to create the VMSS(Virtual mechine scale sets).
+
+
+
+
+
+
+
+
+
+
 
 
  
