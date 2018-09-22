@@ -15,7 +15,7 @@ $virtualNetwork = New-AzureRmVirtualNetwork `
   -Name LAToysVMSSNetwork `
   -AddressPrefix 10.0.0.0/16
   
-$subnetConfig = New-AzureRmVirtualNetworkSubnetConfig `
+$subnetConfig = Add-AzureRmVirtualNetworkSubnetConfig `
   -Name LAToysVMSSSubnet `
   -AddressPrefix 10.0.0.0/24 `
   -VirtualNetwork $virtualNetwork
