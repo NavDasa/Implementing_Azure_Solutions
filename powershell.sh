@@ -9,20 +9,29 @@ $location = "East US"
 #Create a resource group
 New-AzureRmResourceGroup -ResourceGroup $resourceGroupName -Location $location
 
-#Create a virtual network subnet
-$subnet - New-AzureRmVirtualNetworkSubnetConfig -Name "LAToysVMSSSubnet" -AddressPrefix 10.0.0.0/24
-
-#Create a virtual network
-$vnet = New-AzureRmVirtualNetwork -ResourceGroupName $resourceGroupName -Name "LAToysVMSSNetwork -Location $location -AddressPrefix 10.0.0.0/16 -Subnet $subnet
-
+$virtualNetwork = New-AzureRmVirtualNetwork `
+  -ResourceGroupName LAToysVMScaleSet `
+  -Location EastUS `
+  -Name LAToysVMSSNetwork `
+  -AddressPrefix 10.0.0.0/16
+  
+$subnetConfig = New-AzureRmVirtualNetworkSubnetConfig `
+  -Name LAToysVMSSSubnet `
+  -AddressPrefix 10.0.0.0/24 `
+  -VirtualNetwork $virtualNetwork
+  
+$virtualNetwork | Set-AzureRmVirtualNetwork 
+ 
 #Create a public IP address
-$public = New-AzureRmPublicIpAddress -ResourceGroupName $resourceGroupName -Location $location -AllocationMethod Static -Name "LAToysWebVMSSLBIp"
+$publicIP = New-AzureRmPublicIpAddress -ResourceGroupName $resourceGroupName -Location $location -AllocationMethod Static -Name "LAToysWebVMSSLBIp"
 
 #Create a frontend backend IP pool
 $frontendIP = New-AzureRmLoadBalancerFrontendIpConfig -Name "LAToysWebVMSSFrontEndPool" -PublicIpAddress $publicIP
+
 $backendPool = New-AzureRmLoadBalancerBackendAddressPoolConfig -Name "LAToysWebVMSSBackendPool"
 
 $inboundNATPool = New-AzureRmLoadBalancerInboundNatPoolConfig -Name "LAToysWebVMSSInboundRDPRule" -FrontendIpConfigurationId $frontendIP.Id -Protocol TCP -FrontendPortRangeStart 50001 -FrontendPortRangeEnd 50010 -BackendPort 3389
+
 
 $lb = New-AzureRmLoadBalancer -ResourceGroupName $resourceGroupName -Name "LAToysWebVMSSLB" -Location $location -FrontendIpConfiguration $frontendIP -BackendAddressPool $backendPool -InboundNatPool $inboundNATPool
 
@@ -32,7 +41,7 @@ Add-AzureRmLoadBalancerRuleConfig -Name "LAToysWebVMSSLoadBalancerRuleConfig" -L
 
 Set-AzureRmLoadBalancer -LoadBalancer $lb
 
-$ipConfig = New-AzureRmVmssIpConfig -Name "LAToysWebVMSSIPConfig" -LoadBalancerBackendAddressPoolsId $lb.BackendAddressPools[0].Id -LoadBalancerInboundNatPoolsId $inboundNATPool.Id -SubnetId $vnet.Subnet[0].Id
+$ipConfig = New-AzureRmVmssIpConfig -Name "LAToysWebVMSSIPConfig" -LoadBalancerBackendAddressPoolsId $lb.BackendAddressPools[0].Id -LoadBalancerInboundNatPoolsId $inboundNATPool.Id -SubnetId $subnetConfig
 
 $vmssConfig = New-AzureRmVmssConfig -Location $location -SkuCapacity 2 -SkuName "Standard_DS2" -UpgradePolicyMode "Automatic"
 
@@ -43,3 +52,14 @@ Set-AzureRmVmssOsProfile $vmssConfig -AdminUsername $cred.UserName -AdminPasswor
 Add-AzureRmVmssNetworkInterfaceConfiguration -VirtualMachineScaleSet $vmssConfig -Name "LAToysWebVMSSNetworkConfig" -Primary $true -IPConfiguration $ipConfig 
 
 New-AzureRmVmss -ResourceGroupName $resourceGroupName -Name $scaleSetName -VirtualMachineScaleSet $vmssConfig
+
+New-AzureRmVmss -ResourceGroupName $resourceGroupName -Name $scaleSetName -VMScaleSet $vmssConfig
+
+New-AzureRmVmss `
+  -ResourceGroupName $resourceGroupName `
+  -VMScaleSet $vmssConfig `
+  -VirtualNetworkName  $virtualNetwork `
+  -SubnetName $subnetConfig `
+  -PublicIpAddressName $publicIP `
+  -LoadBalancerName $lb `
+  -UpgradePolicyMode "Automatic"
