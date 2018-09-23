@@ -1,6 +1,8 @@
 #Provide your own secure password for use with the VM Instances          #latoysadmin #password: latoysadmin
 $cred = Get-Credential
 
+connect-AzureAD -Credential $cred
+
 #Define variable for resource names
 $resourceGroupName = "LAToysVMScaleSet"
 $scaleSetName = "LAToysWebUIVMSS"
