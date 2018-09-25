@@ -428,7 +428,137 @@ In this lesson we will cover how to:
 Enable remote debugging
 Use remote debugging
 
+Implement ARM Templates:
 
+ARM Templates allow you to have complicated, complex infrastructure templates that are ready to launch at a moment's notice. The templates can function as a starting place for building customer or project specific infrastructure, or they can easily function as backup or schema documents for your resources.
+Here at Linux Academy we make extensive use of ARM templates to help define our labs and our infrastructure.
 
+In this video we will cover how to:
+Author ARM templates
+Create ARM templates to deploy multiple ARM Resource Providers' resources of different types, with count loops and Marketplace items
+Deploy templates with PowerShell, Azure CLI, Azure Portal, and REST API.
 
- 
+Control Access :
+
+Access control policies are a major contributor to the long-term success of any Azure project. In fact Microsoft publishes a best practices guide here: Azure Enterprise Scaffold.
+
+By using good practices, and the Azure tools at hand, you can craft a robust security policy that still gives your users the freedom to create good products.
+
+In this lesson we will cover how to:
+
+Leverage service principals with ARM authentication
+Use Azure Active Directory Authentication with ARM
+Set management policies
+1. How to createa a service principle within the Powershell and azure cli.
+2. How to create access polices.
+
+Control Access Part - 2:
+Access control policies are a major contributor to the long-term success of any Azure project. In fact Microsoft publishes a best practices guide here: Azure Enterprise Scaffold.
+
+By using good practices, and the Azure tools at hand, you can craft a robust security policy that still gives your users the freedom to create good products.
+
+In addition to solid access and use policies, a final part of a good deployment is locking your resources down. This keeps anyone from inadvertantly, or maliciously, removing or changing your resources.
+
+In this lesson we will cover how to:
+
+Lock resources
+
+Design Role-Based Access Control (RBAC):
+
+Role-based Access Control (RBAC) is another key component to a secure Azure deployment. RBAC allows you to create granular control roles that can be assigned to applications, users, and contractors.
+
+This gives you the ability to collaborate, without giving up complete access to your system.
+
+In this lesson we will cover how to:
+
+Secure resource scopes
+Implement Azure RBAC standard roles
+Design Azure RBAC custom roles
+
+1. How to do, assign custom roles through the azure command line.
+
+Manage Data Protection and Security Compliance - Part 1:
+
+Data security breaches are dominating the headlines lately. Azure has responded by making it easy to manage your data security and integrity, both automatically and with custom configurations.
+
+The Azure Key Vault gives you a place to store and manage secret keys. By utilizing a common security Vault, you can more easily manage application and employee on-boarding and off-boarding. By storing your secrets in the Azure Key Vault, no developer or application ever has actual possession of your secrets, they only have the ability to use them.
+
+In this lesson we will cover how to:
+
+Create and import encryption keys with Key Vault
+Automate tasks for SSL/TLS certificates
+Prevent and respond to security threats with Azure Security Center
+
+1. How to creata a Key vault.
+2. How to generate RSA Key in the Keyvault.
+3. How to create an Encrytption key for a Keyvault within the Powershell or Azure-CLI.
+4. How to add SSL Cirtificates to over key vault.
+5. How to create a Certificate authorized by RA.
+6. How to create a import and generate a SSL Certificate through powershell.
+7. How to automate SSL Certificate in web app.
+8. we can use multiple web app for single ssl certificate.
+
+Manage Data Protection and Security Compliance - Part 2:
+
+Azure AD gives you a foundation upon which to build great security practices. By using a single access credential your end-users no-longer need to manage password complexity or requirements for outside sites.
+Your IT department can manage the sign-up and provisioning of SaaS accounts, connecting to new service providers via SAML (or any of several SSO protocols).
+And your end-users can manage their own passwords if they have forgotten their credentials or need to change a password because of security requirements. All of this greatly reduces the pressure on your help desk.
+
+In this lesson we will cover how to:
+
+Configure federation and password based single sign-on with SaaS applications
+Add users and groups to applications
+Revoke access to SaaS applications(Example Twiter, facebook)
+Configure access to SaaS applications
+
+1. How to install chrome extension for a sigle singon.
+2. How to configure SAML Applications.( Example: Go-to meetings).
+3. How to create a SAML Certificate.
+
+Implement Recovery Services:
+
+Disaster recovery and back-up are huge components of an IT professional's job description. The people at Azure have listened to the challenges that most IT admins face in regards to backup and site recovery. Their answer is the Site Recovery Vault. It is an easy to use and highly configurable set of tools for backup, disaster planning, and disaster testing.
+
+This video will primarily cover how to backup a single VM or fleet of VMs, focusing on these:
+
+Creating a backup vault
+Deploying a backup agent
+Backing up and restoring data, using of snapshots and Geo-replication for recovery
+
+Implement Recovery Services - Part 2:
+
+In the world of SLAs and contractually obligated response times, being familiar with site recovery and disaster planning is mandatory. Azure's disaster recovery service allows you to easily plan and execute failovers, and it lets you practice ahead of time.
+
+In this video we will cover how to:
+
+Implement DR (Disaster recovery) as service
+Deploy Azure Site Recovery (ASR) agent, configure ASR
+Configure ASR one-click failover
+
+Enhance Cloud Management with Automation:
+
+As IT infrastructure grows, your need for automation and organization is paramount. With Azure Automation Accounts, tasks spanning multiple machines or resource groups can easily be scripted.
+
+Beyond simple scripting, Azure Automation groups give you the tools to force configuration state on machines, and monitor rogue software installs. The automation tools also include change tracking for servers, update management, and software inventory tools.
+
+All of these data sources can be tied back to Azure Log Analytics for easy searching, alerting, and charting.
+
+In this lesson we will cover how to:
+
+Implement PowerShell runbooks
+Integrate Azure Automation with Web Apps
+
+Collect and Analyze Data Generated by Resources in Cloud and On-Premises Environments:
+
+As the compute and service resource offerings have matured, Azure has begun to add features to, and consolidate the UI/UX of, its support tools. One of the greatest tools in that toolbox is Azure Log Analytics. It's built on top of a newly integrated query language from Application Insights, which is yet another great tool, made for powering analytics for web applications.
+
+In this lesson we will:
+
+Collect and search across data sources from multiple systems
+Build custom visualizations
+Transform Azure activity data and managed resource data into an insight with flexible search queries
+Monitor system updates and malware status
+Track server configuration changes by using Azure Log Analytics
+
+1. How to create a Log analytics work space through poershell.
+2. How to view the Metadata for example how many mechines has a Anti-Malware protection at a time we can see in the Azure log analytics.
