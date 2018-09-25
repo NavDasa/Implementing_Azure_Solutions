@@ -329,6 +329,20 @@ New-AzureRmWebApp -ResourceGroupName $resourceGroup -Location $location -AppServ
 
 az webapp create --resource-group $resourceGroup --name "LAToysWebUI2" --plan $appServicePlanName
 
+Deploy Web Apps:
+
+The majority of businesses using Azure for compute infrastructure also maintain a Web App or two. Some use these Web Apps as internal tools, others as their core service delivery platform.
+
+Azure has many amazing tools for managing the entire life-cycle of a web application.
+
+In this lesson we will cover how to:
+
+Define deployment slots
+Select and use appropriate deployment methods including Git, FTP, and Cloud Sync
+Create, configure, and deploy packages
+Roll back deployments
+Manage Web Apps by using Azure PowerShell and Azure-CLI
+
 
 
 
