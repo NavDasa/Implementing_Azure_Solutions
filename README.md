@@ -352,8 +352,20 @@ $productionSlotName = "production"
 $qaSlotName = "qa"
 New-AzureRmWebAppSlot -ResourceGroupName $resourceGroup -Name $webAppName -AppServicePlan $appServicePlanName -Slot $stagingSlotName
 
+$productionSite = Get-AzureRmWebAppSlot -ResourceGroup $resourceGroup -Name $webAppName -Slot $productionSlotName	
 
+#we are going to copy the content of productionSite to development site. Below command don't work So I created the new slot.
+New-AzureRmWebAppSlot -ResourceGroupName $resourceGroup -Name $webAppName -Slot $developmentSlotName -AppServicePlan $appServicePlanName -SourceWebApp $productionSite
 
+#New-AzureRmWebAppSlot -ResourceGroupName $resourceGroup -Name $webAppName -AppServicePlan $appServicePlanName -Slot $developmentSlotName
+
+New-AzureRmWebAppSlot -ResourceGroupName $resourceGroup -Name $webAppName -AppServicePlan $appServicePlanName -Slot $qaSlotName
+
+#The below command will Swap from staging to develop
+
+Swap-AzureRmWebAppSlot -ResourceGroup -Name $webAppName -SourceSlotName $stagingSlotName -DestinationSlotName $productionSlotName
+
+#If we want to rollback simply see the video again when this topic is required.
 
 
 
