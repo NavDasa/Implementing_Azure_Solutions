@@ -287,6 +287,49 @@ In this lesson we will cover how to:
 Scale applications using Docker, DC/OS, Swarm, or Kubernetes
 Monitor Kubernetes by using Microsoft Operations Management Suite (OMS).
 
+Deploy Web Apps - Part 1:
+
+The majority of businesses using Azure for compute infrastructure also maintain a Web App or two. Some use these Web Apps as internal tools, others as their core service delivery platform.
+
+Azure has many amazing tools for managing the entire life-cycle of a web application.
+In this lesson we will cover how to:
+
+1.Determine when to use App Service Environment (ASE)
+2.Create App Service plans
+3.Create a Web App within an App Service plan
+4.Migrate Web Apps between App Service plans
+
+1. How to create an App service Plan using Powershell. 
+
+$resourceGroup = "LAToysWebUI50Resource"
+$appServicePlanName = "LAToysWebUIPlan2"
+$location = "South Central US"
+$tier = "Free"
+$workerSize = "small"
+
+New-AzureRmAppServicePlan -ResourceGroupName $resourceGroup -Name $appServicePlanName -Location $location -Tier $tier -WorkerSize $workerSize
+
+2. How to create an App service Plan using Azure-CLI.
+
+az account set --subscription "823432b0-785f-4b8c-9e5f-b237d0893118"
+
+$resourceGroup = "LAToysWebUI50Resource"
+$appServicePlanName = "LAToysWebUIPlan3"
+$sku="FREE"
+$location = "South Central US"
+az appservice plan create --resource-group $resourceGroup --name $appServicePlanName --location $location --sku $sku
+ 
+3. How to create a WebApp in Exsisting App Service Plan in PowerShell. 
+$resourceGroup = "LAToysWebUI50Resource"
+$appServicePlanName = "LAToysWebUIPlan"
+$location = "South Central US"
+New-AzureRmWebApp -ResourceGroupName $resourceGroup -Location $location -AppServicePlan $appServicePlanName -Name "LATOysWebApp3"
+
+4. How to create a WebApp in Exisiting App Service Plan in Azure CommandLine.
+
+az webapp create --resource-group $resourceGroup --name "LAToysWebUI2" --plan $appServicePlanName
+
+
 
 
 
