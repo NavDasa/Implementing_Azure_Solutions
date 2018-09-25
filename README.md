@@ -367,13 +367,66 @@ Swap-AzureRmWebAppSlot -ResourceGroup -Name $webAppName -SourceSlotName $staging
 
 #If we want to rollback simply see the video again when this topic is required.
 
+Configure Web Apps:
+
+Modern Web App design removes the configuration of the app from the application logic. With the configuration gone, you are free to concentrate on writing reusable, modular, and secure code.
+Azure provides excellent tools for managing all of your Web App configuration requirements.
+In this lesson we will cover how to:
+
+Configure custom domains
+Configure SSL bindings
+Manage App Service backups
+Configure authentication and authorization for Web Apps
+Define and use app settings, connection strings, handlers, and virtual directories
+Configure Web App notifications
+
+Configure Diagnostics, Monitoring, and Analytics:
+
+The first step of any tuning or troubleshooting procedure is to get your bearings. The more you can learn about how your application is functioning, the better you can troubleshoot any problems as they arise.
+Azure gives developers easy to access tools for viewing, searching, and alerting based on diagnostic logs, metrics, and events.
+In this lesson we will cover how to:
+
+Retrieve diagnostics data
+View streaming logs
+Configure endpoint monitoring
+Configure alerts
+Configure diagnostics
+Monitor Web App resources
+
+ Configure Web Apps for Scale and Resilience - Part 1:
+
+Most customer contracts now cover some sort of SLA (Service Level Agreement) with uptime guarantees and obligated response times.
+
+By using the HA (High Availablity) tools available in Azure, you can easily architect your application to comply with even the most demanding SLA uptime guarantees.
+
+In this lesson we will cover how to:
+
+Configure auto-scale using built-in and custom schedules
+Configure by metric
+Change the size of an instance
 
 
+Configure Web Apps for Scale and Resilience - Part 2:
 
+Most customer contracts now cover some sort of SLA (Service Level Agreement) with uptime guarantees and obligated response times.
+By using the HA (High Availablity) tools available in Azure, you can easily architect your application to comply with even the most demanding SLA uptime guarantees.
 
+In this lesson we will cover how to:
 
+Configure Traffic Manager
 
+1. How to create an Traffic Manager through powershell.
+2. How to create an End-Points from regeions with in the Traffic manager through powershell.
 
+Configure Diagnostics, Monitoring and Analytics - Remote Debugging:
+
+Similar to remote debugging on a VM, Azure's Web App remote debugging feature allows you to connect directly to your running application. Azure provides a remote debugging tool that allows you to access your web application and system logs in real time on the Azure platform.
+This allows developers to quickly test and debug apps, leading to a shorter development cycle.
+
+In this lesson we will cover how to:
+
+Enable remote debugging
+Use remote debugging
 
 
 
