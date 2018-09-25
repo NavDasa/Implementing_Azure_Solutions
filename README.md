@@ -343,6 +343,15 @@ Create, configure, and deploy packages
 Roll back deployments
 Manage Web Apps by using Azure PowerShell and Azure-CLI
 
+$resourceGroup = "LAToysWebUI50Resource"
+$appServicePlanName = "LAToysWebUIPlan"
+$webAppName = "LATOysWebUIApp3"
+$stagingSlotName = "staging"
+$developmentSlotName = "develop"
+$productionSlotName = "production"
+$qaSlotName = "qa"
+New-AzureRmWebAppSlot -ResourceGroupName $resourceGroup -Name $webAppName -AppServicePlan $appServicePlanName -Slot $stagingSlotName
+
 
 
 
